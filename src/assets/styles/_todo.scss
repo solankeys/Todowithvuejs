@@ -1,0 +1,51 @@
+.container{
+  width: 70%;
+  margin: 0 auto;
+}
+.todo{
+  input, button {
+    outline: none;
+    border: none;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    border-radius: 6px;
+  }
+  button{
+    cursor: pointer;
+  }
+  .todo__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+    .todo__formcontrol{
+      height: 40px;
+      width: 100%;
+    }
+    .todo__btn{
+      height: 55px;
+    }
+  }
+  .todos{
+    ul{
+      flex-direction: column;
+      li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        span{
+          width: 100%;
+          border-bottom: 1px solid #ddd;
+          text-align: left;
+        }
+      }
+    }
+  }
+  .delete{
+    color: #fff;
+          background-color: #ff0000;
+  }
+}
